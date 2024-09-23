@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body {
+    min-height: 100vh;
+    background-image: url("langit2.jpg");
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2 {
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #00d9ff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 3s linear infinite;
+}
+button {
+    margin: 100px auto;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #00d9ff;
+    text-transform: uppercase;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #00d9ff;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: animate 3s linear infinite;
+    border-radius: 10px;
+}
+@keyframes animate {
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #a4d8ee;
+        text-shadow: none;
+    }
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+            0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    }
+}
